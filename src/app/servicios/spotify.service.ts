@@ -7,7 +7,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class SpotifyService {
 
   cabeceras: HttpHeaders = new HttpHeaders({
-    'Authorization': 'Bearer BQBm13regobhgGa5ixY-UcBc_K1WQvpw97Pt_IXFR-WPZtWaZgqUT2a0BC1pMhcqUWeXEFpz__iqQTjGtGo'
+    'Authorization': 'Bearer BQAHvk0KKPhLMQ7mFKgTQk3l54MpExYhI7XeH0aYhQLP3Qu0OTEJTGrBn2AunpIcmqzHM4IJdSK1eYxRbsc'
   });
 
   constructor(private http: HttpClient) { }
