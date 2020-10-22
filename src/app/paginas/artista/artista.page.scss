@@ -1,0 +1,31 @@
+.imagen{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#audio{
+    position: fixed;
+    background-color: rgba($color: rgb(5, 6, 7), $alpha: 0.8);
+    color: white;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    z-index: 1;
+}
+
+#audio audio{
+    width: 100%;
+}
+
+.hideAudio{
+    bottom: 45%;
+    left: -9999px;
+    transition: 0.2s all;
+}
+
+.showAudio{
+    bottom: 45%;
+    left: 0px;
+    transition: 0.2s all;
+}

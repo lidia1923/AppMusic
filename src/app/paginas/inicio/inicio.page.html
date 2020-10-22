@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button menu="menup"></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="light" class="ion-text-center">AppMusic</ion-title>
+    <ion-buttons slot="end">
+      <ion-avatar class="ion-padding">
+        <img src="../../../assets/img/music.png">
+      </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="../../../assets/img/fondo.jpg" alt="Recurso no encontrado" class="fondo">
+  <div class="ajustar">
+    <div *ngFor="let item of menuprincipal|async" (click)="navegar(item.url)">
+      <ion-card mode="ios" class="card">
+        <img [src]="item.img" alt="Recurso no encontrado" class="slide-image">
+        <h4>{{item.texto}}</h4>
+      </ion-card>
+    </div>
+  </div>
+  <ion-item color="tertiary">
+    <h5>Albúms más recientes:</h5>
+  </ion-item>
+  <div class="albums">
+    <div *ngFor="let item of nuevasCanciones">
+      <ion-card made="ios" class="album">
+        <img style="height: 168px;" [src]="item.images | imagenes">
+        <div>
+          <h5 class="titulo-card">{{item.name}}</h5>
+          <span>Artistas:</span> <br> <br>
+          <span *ngFor="let artista of item.artists">
+            {{artista.name}} <br>
+          </span>
+        </div>
+      </ion-card>
+    </div>  
+  </div>
+
+</ion-content>

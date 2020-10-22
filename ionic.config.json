@@ -1,0 +1,10 @@
+{
+  "name": "appmusic",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}

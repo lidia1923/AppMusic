@@ -1,0 +1,8 @@
+[
+    {
+      "url": "/buscar",
+      "icono": "search",
+      "texto": "Buscar",
+      "img":"/assets/img/buscar.png"
+    }
+  ]

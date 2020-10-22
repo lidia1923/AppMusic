@@ -1,0 +1,28 @@
+<ion-menu side="start" menuId="menup" contentId="menuprincipal">
+  <ion-header>
+    <ion-toolbar color="dark" (click)="navegar('/inicio')">
+      <ion-buttons slot="start">
+        <ion-icon name="home-outline" color="light" class="iconoheader"></ion-icon>
+      </ion-buttons>
+      <ion-title class="ion-text-center">AppMusic</ion-title>
+      <ion-buttons slot="end">
+        <ion-avatar class="ion-padding">
+          <img src="../../../assets/img/music.png">
+        </ion-avatar>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <div class="fondo"></div>
+    <ion-list>
+      <!--<ion-list-header>Lidia</ion-list-header>
+      <ion-note>lidiaalejandro5@gmail.com</ion-note>-->
+      <ion-menu-toggle *ngFor="let item of menuprincipal|async">
+        <ion-item (click)="navegar(item.url)" detail color="tertiary">
+          <ion-icon color="light" slot="start" [name]="item.icono"></ion-icon>
+          <ion-label color="dark" class="ion-text-uppercase"><strong>{{item.texto}}</strong></ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+</ion-menu>
