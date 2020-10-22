@@ -8,3 +8,5 @@ _AppMusic es un proyecto desarrollado para android, el cual usa un token de acce
 - Ir a https://developer.spotify.com/dashboard/applications. Inicia sesión y crea un nuevo projecto.
 - Una vez creado el proyecto te proporcionará un **Client ID** y un **Client Secret**.
 - Abre una nueva pestaña en **POSTMAN**.
+- Agrega lo siguiente:
+
