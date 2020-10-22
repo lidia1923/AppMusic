@@ -17,3 +17,8 @@ _AppMusic es un proyecto desarrollado para android, el cual usa un token de acce
 Una vez obtenido el token de acceso se va al servicio de spotify en la carpeta de **servicios** en el proyecto y agregamos lo siguiente:
 ![ScreenShot](/src/assets/img/token-cabecera.png?raw=true)
 ## RESULTADOS
+![ScreenShot](/src/assets/img/app1.png?colum=true) 
+![ScreenShot](/src/assets/img/app2.png?colum=true)
+========
+![ScreenShot](/src/assets/img/app3.png?colum=true)
+![ScreenShot](/src/assets/img/app4.png?colum=true)
